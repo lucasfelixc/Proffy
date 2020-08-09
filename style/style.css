@@ -18,7 +18,7 @@
     --color-box-base: #FFFFFF;
     --color-box-footer: #FAFAFC;
     --color-small-info: #C1BCCC;
-    --color-background-main: #c5adff;
+    --color-background-main: #e6ddfc;
 
     /* Tamanho da fonte padrã: 16px - 100% - 1rem */
     font-size: 60%; /* controle das medidas rem */
@@ -35,7 +35,7 @@ html, body {
 }
 
 body {
-    background: var(--color-background);
+    background: var(--color-background-main);
     display: flex;
     align-items: center;
     justify-content: center;
