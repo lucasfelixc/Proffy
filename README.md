@@ -1,3 +1,13 @@
-Esse projeto foi, originalmente, desenvolvido pela RocketSeat. Participei da Next Level Week, onde foi desenvolvida essa aplicação com o intuito de debater, de forma básica, a criação de projetos com a uma das stacks mais usadas no desenvolvimento web.
+This project was conceived by rocketseat, and, through an immersive week of classes, I developed with them.
 
-O projeto foi pensado para ser concluido em uma semana, do front-end ao back-end.
+## Available Scripts
+
+In the project directory, you can run:
+
+### `yarn start`
+
+Run the application in development mode. <br />
+Open [http: // localhost: 5500] (http: // localhost: 5500) to view it in your browser.
+
+The page will reload if you make edits. <br />
+You will also see any lint errors on the console.
