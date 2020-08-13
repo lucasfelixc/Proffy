@@ -1,0 +1,28 @@
+{
+  "name": "nlw",
+  "version": "1.0.0",
+  "description": "Esse projeto foi, originalmente, desenvolvido pela RocketSeat. Participei da Next Level Week, onde foi desenvolvida essa aplicação com o intuito de debater, de forma básica, a criação de projetos com a uma das stacks mais usadas no desenvolvimento web.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasfelixc/Proffy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasfelixc/Proffy/issues"
+  },
+  "homepage": "https://github.com/lucasfelixc/Proffy#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.2",
+    "sqlite-async": "^1.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
