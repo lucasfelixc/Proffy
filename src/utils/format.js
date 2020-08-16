@@ -32,9 +32,20 @@ function convertHoursToMinutes (time) {
     return Number((hours * 60)) + Number(minutes)
 }
 
+function rendRowPages (act, time) {
+    return new Promise((resolve, reject) => {
+
+        setTimeout(() => {
+            resolve(act)
+        }, time)
+
+    })
+}
+
 module.exports = {
     subjects,
     weekdays,
     getSubject,
-    convertHoursToMinutes
+    convertHoursToMinutes,
+    rendRowPages
 }

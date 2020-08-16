@@ -4,7 +4,8 @@ const {
     subjects,
     weekdays, 
     getSubject,
-    convertHoursToMinutes
+    convertHoursToMinutes,
+    rendRowPages
 } = require('./utils/format')
 
 function pageLanding (req, res) {
@@ -86,15 +87,21 @@ async function saveClasses (req, res) {
         queryString += '&weekday=' + data.weekday[0]
         queryString += '&time=' + data.time_from[0]
 
-        return res.redirect('/study' + queryString);
+        return res.redirect('/sucess')
+
     } catch (error) {
         console.log(error)
     }
+}
+
+function pageSucess (req, res) {
+    return res.render('sucess.html')
 }
 
 module.exports = {
     pageLanding,
     pageStudy,
     pageGiveClasses,
-    saveClasses
+    saveClasses,
+    pageSucess
 }

@@ -6,7 +6,8 @@ const {
     pageLanding,
     pageStudy,
     pageGiveClasses,
-    saveClasses
+    saveClasses,
+    pageSucess
 } = require('./pages')
 
 // configurar nunjucks
@@ -23,6 +24,7 @@ app.use(express.urlencoded({ extended: true }))
 .get('/', pageLanding)
 .get('/study', pageStudy)
 .get('/give-classes', pageGiveClasses)
+.get('/sucess', pageSucess)
 .post('/save-classes', saveClasses)
 // iniciar servidor
 app.listen(5500);
