@@ -6,9 +6,9 @@
     color: var(--color-text-in-primary);
 }
 
-/* #container .logo-container {
+#container .logo-container {
     height: 10rem;
-} */
+}
 
 .logo-container {
     text-align: center;

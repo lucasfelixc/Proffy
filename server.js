@@ -1,12 +1,10 @@
 // Servidor
 const express = require('express');
 const app = express();
+const routes = require('./routes')
 
 const {
-    pageLanding,
-    pageStudy,
     pageGiveClasses,
-    saveClasses,
     pageSucess
 } = require('./pages')
 
@@ -17,14 +15,17 @@ nunjucks.configure('src/views', {
     noCache: true
 })
 
-app.use(express.urlencoded({ extended: true }))
+app
+// receber dados do body
+.use(express.urlencoded({ extended: true }))
 // configurar os arquivos estáticos (css, html, imagens)
 .use(express.static('public'))
 // rotas da aplicação
-.get('/', pageLanding)
-.get('/study', pageStudy)
-.get('/give-classes', pageGiveClasses)
+.use(routes)
+
 .get('/sucess', pageSucess)
-.post('/save-classes', saveClasses)
+
 // iniciar servidor
-app.listen(5500);
+.listen(3000, () => {
+    console.log('Acesse http://localhost:3000')
+});

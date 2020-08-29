@@ -4,7 +4,7 @@ This project was conceived by rocketseat, and, through an immersive week of clas
 
 In the project directory, you can run:
 
-### `yarn start`
+### `npm run dev`
 
 Run the application in development mode. <br />
 Open [http: // localhost: 5500] (http: // localhost: 5500) to view it in your browser.

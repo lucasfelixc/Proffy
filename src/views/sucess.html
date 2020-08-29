@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br"> <!-- lang é um atributo -->
+<html lang="pt-br"> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +11,35 @@
 
     <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="/style/partials/header.css">
-    <link rel="stylesheet" href="/style/partials/page-landing.css">
+    <link rel="stylesheet" href="/style/partials/page-success.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
 </head>
-<body id="page-landing">
+<body id="page-success">
 
     <div id="container">
 
+        <div class="img">
+            <img class="back-success" src="/images/success-background.svg" alt="sucesso-no-cadastro">
+        </div>
+
+        <div class="msg-success">
+            <img src="/images/icons/success-check-icon.svg" alt="sucesso-icon">
+
+            <strong>Cadastro salvo!</strong>
+            <p>Tudo certo, seu cadastro já está na nossa lista de professores.<br>Agora é só ficar de olho no seu WhatsApp.</p>
+
+        </div>
+        
     </div>
-        <script>(function () {
-            setTimeout(() => { window.location.href = "/study" }, 2000)
-        })()</script>
+
+        <script>
+
+            (function () {
+                setTimeout(() => { window.location.href = '/study' }, 2000)
+            })()
+
+        </script>
+
 </body>
 </html>
